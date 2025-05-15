@@ -41,3 +41,31 @@ It communicates directly with the device over USB and sends a control transfer t
 sudo apt update
 sudo apt install python3 python3-pip
 pip3 install pyusb
+```
+
+###2. Save the Script Safely
+Avoid saving the script in temporary locations like Downloads, since startup commands rely on a fixed path.
+
+Save it somewhere persistent and user-controlled, like:
+```bash
+mkdir -p ~/.scripts
+mv disable_macros.py ~/.scripts/
+chmod +x ~/.scripts/disable_macros.py
+```
+
+###3. Run the Script 
+```bash
+sudo ~/.scripts/disable_macros.py
+```
+
+You should see output like:
+```kotlin
+Found device 1532:293
+Kernel driver active. Detaching it.
+Claiming interface
+Data sent successfully.
+Releasing claimed interface
+Reattaching the kernel driver
+Done.
+```
+
