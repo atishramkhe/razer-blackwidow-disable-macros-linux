@@ -82,7 +82,7 @@ To automatically disable the macro keys each time you log in:
     ```
 - Click Save
 ```
-🔐 You may be prompted for a password on login. To suppress this, you can allow passwordless sudo for the script (optional, see below).
+🔐 You may be prompted for a password on login. To suppress this, you can allow passwordless sudo for the script.
 ```
 
 ### 🧪 Troubleshooting
