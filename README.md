@@ -77,10 +77,11 @@ To automatically disable the macro keys each time you log in:
 - Choose Custom command
   - Name: Disable Razer Macro Keys
   - Command:
-  - ```bash
+    ```bash
     bash -c 'sleep 5 && sudo ~/.scripts/disable_macros.py'
     ```
 - Click Save
+  
 `
 🔐 You may be prompted for a password on login. To suppress this, you can allow passwordless sudo for the script.
 `
