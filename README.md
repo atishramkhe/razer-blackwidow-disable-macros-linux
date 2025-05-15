@@ -43,7 +43,7 @@ sudo apt install python3 python3-pip
 pip3 install pyusb
 ```
 
-###2. Save the Script Safely
+### 2. Save the Script Safely
 Avoid saving the script in temporary locations like Downloads, since startup commands rely on a fixed path.
 
 Save it somewhere persistent and user-controlled, like:
@@ -53,7 +53,7 @@ mv disable_macros.py ~/.scripts/
 chmod +x ~/.scripts/disable_macros.py
 ```
 
-###3. Run the Script 
+### 3. Run the Script 
 ```bash
 sudo ~/.scripts/disable_macros.py
 ```
