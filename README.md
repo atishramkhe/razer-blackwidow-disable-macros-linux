@@ -9,7 +9,7 @@ It communicates directly with the device over USB and sends a control transfer t
 ## 🔧 Features
 
 - Disables M1–M6 macro keys via USB command.
-- Turns off the macro key backlight as a visual confirmation. (does not work)
+- ~~Turns off the macro key backlight as a visual confirmation.~~ (does not work)
 - Uses `pyusb` to send control messages to the keyboard.
 - Safe to use: does not flash or alter firmware.
 - Works on Linux Mint and similar distributions.
