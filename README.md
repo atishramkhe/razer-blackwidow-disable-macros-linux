@@ -69,3 +69,24 @@ Reattaching the kernel driver
 Done.
 ```
 
+### 4. Make It Run at Startup (Linux Mint)
+To automatically disable the macro keys each time you log in:
+
+- Press Super (Windows key) and search for Startup Applications
+- Click Add
+- Choose Custom command
+  - Name: Disable Razer Macro Keys
+  - Command:
+  - ```bash
+    bash -c 'sleep 5 && sudo ~/.scripts/disable_macros.py'
+    ```
+- Click Save
+```
+🔐 You may be prompted for a password on login. To suppress this, you can allow passwordless sudo for the script (optional, see below).
+```
+
+### 🧪 Troubleshooting
+
+- No effect? Check with ``` bash lsusb | grep -i razer ``` to confirm device ID ```1532:0293```
+- Permission denied? Run with sudo
+- Script hangs? Unplug and replug the keyboard, then try again
